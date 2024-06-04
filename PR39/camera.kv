@@ -1,0 +1,19 @@
+<CameraScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Camera:
+            id: camera
+            resolution: (640, 480)
+            play: True
+        Button:
+            text: 'Сделать снимок'
+            size_hint_y: None
+            height: '48dp'
+            on_release: root.capture_image()
+
+<MainScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text: 'Камера'
+            on_press: root.manager.current = 'camera'

@@ -1,0 +1,76 @@
+<WelcomeScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: 20
+        Label:
+            text: 'Welcome'
+            font_size: 32
+        Button:
+            text: 'Register'
+            font_size: 24
+            size_hint: None, None
+            size: 200, 50
+            on_press: root.go_to_register()
+        Button:
+            text: 'Login'
+            font_size: 24
+            size_hint: None, None
+            size: 200, 50
+            on_press: root.go_to_login()
+
+<RegisterScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: 20
+        Label:
+            text: 'Register'
+            font_size: 32
+        TextInput:
+            id: username_input
+            hint_text: 'Username'
+            font_size: 24
+            size_hint_y: None
+            height: 50
+        TextInput:
+            id: password_input
+            hint_text: 'Password'
+            password: True
+            font_size: 24
+            size_hint_y: None
+            height: 50
+        Button:
+            text: 'Register'
+            font_size: 24
+            size_hint: None, None
+            size: 200, 50
+            on_press: root.register()
+
+<LoginScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: 20
+        Label:
+            text: 'Login'
+            font_size: 32
+        TextInput:
+            id: username_input
+            hint_text: 'Username'
+            font_size: 24
+            size_hint_y: None
+            height: 50
+        TextInput:
+            id: password_input
+            hint_text: 'Password'
+            password: True
+            font_size: 24
+            size_hint_y: None
+            height: 50
+        Button:
+            text: 'Login'
+            font_size: 24
+            size_hint: None, None
+            size: 200, 50
+            on_press: root.login()
