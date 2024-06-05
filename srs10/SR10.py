@@ -17,7 +17,6 @@ Builder.load_file('windows.kv')
 class WelcomeScreen(Screen):
     def go_to_register(self):
         self.manager.current = 'register'
-
     def go_to_login(self):
         self.manager.current = 'login'
 class RegisterScreen(Screen):

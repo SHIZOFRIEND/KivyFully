@@ -6,13 +6,10 @@ from kivy.uix.popup import Popup
 from kivy.uix.spinner import Spinner
 from kivy.clock import Clock
 from datetime import datetime, timedelta
-
-
 class ReminderApp(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.reminders = []
-
     def build(self):
         layout = BoxLayout(orientation='vertical')
         self.date_spinner = Spinner(text='Выберите дату')

@@ -12,7 +12,6 @@
             size_hint: None, None
             size: 200, 50
             on_press: root.start_quiz()
-
 <QuizScreen>:
     BoxLayout:
         orientation: 'vertical'
@@ -45,7 +44,6 @@
             text: ''
             font_size: 24
             on_press: root.check_answer(self)
-
 <ResultScreen>:
     BoxLayout:
         orientation: 'vertical'

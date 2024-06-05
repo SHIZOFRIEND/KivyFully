@@ -1,22 +1,17 @@
 # Custom button
 <CustButton@Button>:
     font_size: 32
-
 <CalcGridLayout>:
     id: calculator
     display: entry
     rows: 6
     padding: 10
     spacing: 10
-
-
-
     BoxLayout:
         TextInput:
             id: entry
             font_size: 32
             multiline: False
-
     BoxLayout:
         spacing: 10
         CustButton:
@@ -31,7 +26,6 @@
         CustButton:
             text: "+"
             on_press: entry.text += self.text
-
     BoxLayout:
         spacing: 10
         CustButton:
@@ -46,7 +40,6 @@
         CustButton:
             text: "-"
             on_press: entry.text += self.text
-
     BoxLayout:
         spacing: 10
         CustButton:
@@ -61,8 +54,6 @@
         CustButton:
             text: "*"
             on_press: entry.text += self.text
-
-
     BoxLayout:
         spacing: 10
         CustButton:

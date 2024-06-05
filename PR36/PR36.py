@@ -14,6 +14,5 @@ class CalcGridLayout(GridLayout):
 class CalculatorApp(App):
     def build(self):
         return CalcGridLayout()
-
 calcApp = CalculatorApp()
 calcApp.run()

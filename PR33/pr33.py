@@ -4,7 +4,6 @@ from kivy.animation import Animation
 from kivy.app import App
 from kivy.uix.button import Button
 class TestApp(App):
-
     def animate(self, instance):
         animation = Animation(pos=(100, 100), t='out_bounce')
         animation += Animation(pos=(200, 100), t='out_bounce')
